@@ -11,7 +11,7 @@ data/processed/*
 
 models/*.pkl
 models/*.pt
-models/*.pth
+
 
 .DS_Store
 .vscode/
