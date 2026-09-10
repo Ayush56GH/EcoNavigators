@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import '../styles/variables.css';
+@import '../styles/navbar.css';
+@import '../styles/hero.css';
+@import '../styles/process.css';
+@import '../styles/method.css';
+@import '../styles/video.css';
+@import '../styles/footer.css';
+@import '../styles/modal.css';
+@import '../styles/signup.css';
+@import '../styles/dashboard.css';
+@import 'leaflet/dist/leaflet.css';

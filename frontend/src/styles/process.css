@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Section 1: The Core Idea (Screenshot 1)
+   ========================================================================== */
+.core-idea-section {
+  padding: 10rem 5%;
+  background-color: var(--bg-dark);
+}
+
+.core-idea-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.core-idea-title {
+  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  color: var(--text-white);
+  max-width: 1050px;
+}
+
+.core-idea-title span {
+  color: var(--teal-bright);
+  display: block;
+  margin-top: 0.35rem;
+}
+
+/* ==========================================================================
+   Section 2: Why It Matters (Screenshot 2)
+   ========================================================================== */
+.why-matters-section {
+  background-color: var(--bg-white);
+  padding: 8rem 5%;
+  color: var(--text-dark);
+}
+
+.why-matters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.why-matters-heading {
+  font-size: clamp(2.5rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.why-matters-desc {
+  color: var(--text-muted-dark);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #e2e8f0;
+}
+
+.impact-card {
+  padding: 2rem 2rem 2.25rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.impact-card:nth-child(odd) {
+  padding-left: 0;
+  border-right: 1px solid #e2e8f0;
+}
+
+.impact-card:nth-child(even) {
+  padding-right: 0;
+}
+
+.impact-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.impact-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.impact-icon {
+  color: var(--teal-dark);
+  width: 22px;
+  height: 22px;
+  stroke-width: 2;
+}
+
+.impact-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.3px;
+}
+
+.impact-card-body {
+  color: var(--text-muted-dark);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .why-matters-container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  .impact-card:nth-child(odd) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .impact-card:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+/* ==========================================================================
+   Section 3: The Monitoring Challenge (Screenshot 3)
+   ========================================================================== */
+.process-section {
+  background-color: var(--bg-light-blue);
+  padding: 8rem 5%;
+  color: var(--text-dark);
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-header {
+  margin-bottom: 4rem;
+}
+
+.process-title {
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  color: var(--text-dark);
+  max-width: 850px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.process-card {
+  border-top: 1px solid #cbd5e1;
+  padding-top: 1.75rem;
+}
+
+.card-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.3px;
+}
+
+.card-body {
+  color: var(--text-muted-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "optimal_threshold": 0.6,
+  "metrics": {
+    "threshold": 0.6,
+    "iou": 0.8945,
+    "dice": 0.9443,
+    "precision": 0.9334,
+    "recall": 0.9556
+  },
+  "all_thresholds": [
+    {
+      "threshold": 0.2,
+      "iou": 0.0198,
+      "dice": 0.0388,
+      "precision": 0.0198,
+      "recall": 0.9996
+    },
+    {
+      "threshold": 0.25,
+      "iou": 0.1545,
+      "dice": 0.2676,
+      "precision": 0.1545,
+      "recall": 0.9984
+    },
+    {
+      "threshold": 0.3,
+      "iou": 0.727,
+      "dice": 0.8419,
+      "precision": 0.729,
+      "recall": 0.9963
+    },
+    {
+      "threshold": 0.35,
+      "iou": 0.8115,
+      "dice": 0.896,
+      "precision": 0.8164,
+      "recall": 0.9928
+    },
+    {
+      "threshold": 0.4,
+      "iou": 0.8399,
+      "dice": 0.913,
+      "precision": 0.8479,
+      "recall": 0.989
+    },
+    {
+      "threshold": 0.45,
+      "iou": 0.8612,
+      "dice": 0.9254,
+      "precision": 0.8738,
+      "recall": 0.9836
+    },
+    {
+      "threshold": 0.5,
+      "iou": 0.8779,
+      "dice": 0.935,
+      "precision": 0.8963,
+      "recall": 0.9773
+    },
+    {
+      "threshold": 0.55,
+      "iou": 0.8882,
+      "dice": 0.9408,
+      "precision": 0.9157,
+      "recall": 0.9673
+    },
+    {
+      "threshold": 0.6,
+      "iou": 0.8945,
+      "dice": 0.9443,
+      "precision": 0.9334,
+      "recall": 0.9556
+    },
+    {
+      "threshold": 0.65,
+      "iou": 0.8941,
+      "dice": 0.9441,
+      "precision": 0.9482,
+      "recall": 0.94
+    },
+    {
+      "threshold": 0.7,
+      "iou": 0.8875,
+      "dice": 0.9404,
+      "precision": 0.9611,
+      "recall": 0.9206
+    },
+    {
+      "threshold": 0.75,
+      "iou": 0.875,
+      "dice": 0.9333,
+      "precision": 0.9722,
+      "recall": 0.8974
+    },
+    {
+      "threshold": 0.8,
+      "iou": 0.851,
+      "dice": 0.9195,
+      "precision": 0.9829,
+      "recall": 0.8639
+    }
+  ],
+  "parameters": 1942433,
+  "input_channels": [
+    "VV",
+    "VH"
+  ],
+  "patch_size": [
+    256,
+    256
+  ]
+}

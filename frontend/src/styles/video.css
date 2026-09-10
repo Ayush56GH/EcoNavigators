@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Live System Interactive 3D Scroll Showcase
+   ========================================================================== */
+.video-section {
+  padding: 8rem 5% 4rem;
+  background-color: var(--bg-dark);
+  text-align: center;
+  position: relative;
+}
+
+.video-section .method-title {
+  margin-bottom: 3.5rem;
+}
+
+/* Scroll Container spanning multi-screen height for smooth sticky scrolling */
+.animation-scroll-wrapper {
+  position: relative;
+  height: 250vh;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.animation-sticky-frame {
+  position: sticky;
+  top: 90px;
+  width: 100%;
+  height: calc(100vh - 120px);
+  min-height: 560px;
+  max-height: 740px;
+}
+
+.animation-demo-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 215, 178, 0.25);
+  border-radius: 12px;
+  background: radial-gradient(circle at 50% 30%, #081626 0%, #030a12 100%);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 215, 178, 0.08);
+}
+
+.animation-stage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.animation-stage > div {
+  width: 100%;
+  height: 100%;
+}
+
+/* Top Stage Timeline Cards */
+.animation-timeline {
+  position: absolute;
+  top: 1.25rem;
+  left: 50%;
+  z-index: 10;
+  width: min(94%, 960px);
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(7, 14, 23, 0.85);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.animation-step {
+  position: relative;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 7px;
+  background: rgba(15, 25, 38, 0.6);
+  color: var(--text-muted-light);
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.animation-step:hover {
+  background: rgba(25, 38, 55, 0.7);
+  border-color: rgba(0, 215, 178, 0.3);
+}
+
+.animation-step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.step-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.step-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.step-name {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.step-desc {
+  display: block;
+  font-size: 0.68rem;
+  color: #64748b;
+  margin-top: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.animation-step.active {
+  background: rgba(0, 215, 178, 0.12);
+  border-color: var(--teal-bright);
+  box-shadow: 0 0 15px rgba(0, 215, 178, 0.2);
+}
+
+.animation-step.active .step-num,
+.animation-step.active .step-tag,
+.animation-step.active .step-name {
+  color: var(--teal-bright);
+}
+
+.animation-step.active .step-desc {
+  color: #a7f3d0;
+}
+
+@media (max-width: 900px) {
+  .animation-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .animation-sticky-frame {
+    height: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-timeline {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    padding: 0.4rem;
+  }
+  .step-desc {
+    display: none;
+  }
+}

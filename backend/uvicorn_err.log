@@ -1,0 +1,8 @@
+INFO:     Will watch for changes in these directories: ['D:\\oil-spill-detection']
+[Copernicus] COPERNICUS_CLIENT_ID / COPERNICUS_CLIENT_SECRET not set. Satellite fetch will fail. Set credentials in .env file.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [35492] using StatReload
+[Copernicus] COPERNICUS_CLIENT_ID / COPERNICUS_CLIENT_SECRET not set. Satellite fetch will fail. Set credentials in .env file.
+INFO:     Started server process [20168]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
